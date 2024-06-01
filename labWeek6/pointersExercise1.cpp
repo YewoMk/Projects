@@ -4,24 +4,21 @@ using namespace std;
 
 int main() {
    
-    int* dynamicInt = new int;
-
-    string* dynamicString = new string;
-
-    cout << "Enter an integer value: ";
-    cin >> *dynamicInt;
-
-    cout << "Enter a string value: ";
-    cin.ignore(); 
-    getline(cin, *dynamicString);
+    
 
    
-    cout << "Dynamically allocated integer value: " << *dynamicInt ;
-    cout << "Dynamically allocated string value: " << *dynamicString ;
-
-  
-    delete dynamicInt;
-    delete dynamicString;
 
     return 0;
+}
+int& Add(int inputA, int inputB) {
+
+    int result = inputA + inputB;
+
+    return result;
+}
+float& Add(float inputA , float inputB) {
+    float* pResult = new float;
+    *pResult = inputA + inputB;
+    return *pResult;
+
 }
