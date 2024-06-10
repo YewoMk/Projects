@@ -7,7 +7,7 @@ int main() {
         std::cout << "Please enter an integer between 5 and 10: ";
         if (std::cin >> num) {
             if (num >= 5 && num <= 10) {
-                std::cout << "Your input value  " << num << ". This value is accepted.\n";
+                std::cout << "Your input value is " << num << ". This value is accepted.\n";
                 break;
             } else {
                 std::cout << "You entered " << num << " please enter a number between 5 and 10.\n";

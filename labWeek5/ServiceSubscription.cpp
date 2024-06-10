@@ -1,15 +1,13 @@
 #include <iostream>
-#include <cstdlib>  // For srand and rand functions
-#include <ctime>    // For time function
+#include <cstdlib>  
+#include <ctime>    
 using namespace std;
 
 int main() {
-    // Seed the random number generator using the current time
+
     srand(time(nullptr));
 
-    // Generate and print a random number
-    //std::cout << rand() << std::endl;
-
+    
 
     int daysUntilExpiration = rand() % 12;
 
@@ -33,7 +31,7 @@ int main() {
     else {
         cout << "You have an active subscription " << endl;
     }
-    //cout << daysUntilExpiration;
+    
 
     return 0;
 }
